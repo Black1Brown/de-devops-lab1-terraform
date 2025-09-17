@@ -1,0 +1,118 @@
+[0m[1mrandom_id.bucket_suffix: Refreshing state... [id=GEQ][0m
+[0m[1mgoogle_project_service.storage: Refreshing state... [id=de-devops-lab1/storage.googleapis.com][0m
+[0m[1mgoogle_project_service.compute: Refreshing state... [id=de-devops-lab1/compute.googleapis.com][0m
+[0m[1mgoogle_project_service.bigquery: Refreshing state... [id=de-devops-lab1/bigquery.googleapis.com][0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mError when reading or editing Project Service de-devops-lab1/compute.googleapis.com: googleapi: Error 403: Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[31m│[0m [0mDetails:
+[31m│[0m [0m[
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+[31m│[0m [0m    "domain": "googleapis.com",
+[31m│[0m [0m    "metadata": {
+[31m│[0m [0m      "activationUrl": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1",
+[31m│[0m [0m      "consumer": "projects/de-devops-lab1",
+[31m│[0m [0m      "containerInfo": "de-devops-lab1",
+[31m│[0m [0m      "service": "cloudresourcemanager.googleapis.com",
+[31m│[0m [0m      "serviceTitle": "Cloud Resource Manager API"
+[31m│[0m [0m    },
+[31m│[0m [0m    "reason": "SERVICE_DISABLED"
+[31m│[0m [0m  },
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+[31m│[0m [0m    "locale": "en-US",
+[31m│[0m [0m    "message": "Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+[31m│[0m [0m  },
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.Help",
+[31m│[0m [0m    "links": [
+[31m│[0m [0m      {
+[31m│[0m [0m        "description": "Google developers console API activation",
+[31m│[0m [0m        "url": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1"
+[31m│[0m [0m      }
+[31m│[0m [0m    ]
+[31m│[0m [0m  }
+[31m│[0m [0m]
+[31m│[0m [0m, accessNotConfigured[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with google_project_service.compute,
+[31m│[0m [0m  on main.tf line 2, in resource "google_project_service" "compute":
+[31m│[0m [0m   2: resource "google_project_service" "compute" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mError when reading or editing Project Service de-devops-lab1/storage.googleapis.com: googleapi: Error 403: Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[31m│[0m [0mDetails:
+[31m│[0m [0m[
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+[31m│[0m [0m    "domain": "googleapis.com",
+[31m│[0m [0m    "metadata": {
+[31m│[0m [0m      "activationUrl": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1",
+[31m│[0m [0m      "consumer": "projects/de-devops-lab1",
+[31m│[0m [0m      "containerInfo": "de-devops-lab1",
+[31m│[0m [0m      "service": "cloudresourcemanager.googleapis.com",
+[31m│[0m [0m      "serviceTitle": "Cloud Resource Manager API"
+[31m│[0m [0m    },
+[31m│[0m [0m    "reason": "SERVICE_DISABLED"
+[31m│[0m [0m  },
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+[31m│[0m [0m    "locale": "en-US",
+[31m│[0m [0m    "message": "Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+[31m│[0m [0m  },
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.Help",
+[31m│[0m [0m    "links": [
+[31m│[0m [0m      {
+[31m│[0m [0m        "description": "Google developers console API activation",
+[31m│[0m [0m        "url": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1"
+[31m│[0m [0m      }
+[31m│[0m [0m    ]
+[31m│[0m [0m  }
+[31m│[0m [0m]
+[31m│[0m [0m, accessNotConfigured[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with google_project_service.storage,
+[31m│[0m [0m  on main.tf line 7, in resource "google_project_service" "storage":
+[31m│[0m [0m   7: resource "google_project_service" "storage" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m
+[31m╷[0m[0m
+[31m│[0m [0m[1m[31mError: [0m[0m[1mError when reading or editing Project Service de-devops-lab1/bigquery.googleapis.com: googleapi: Error 403: Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
+[31m│[0m [0mDetails:
+[31m│[0m [0m[
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+[31m│[0m [0m    "domain": "googleapis.com",
+[31m│[0m [0m    "metadata": {
+[31m│[0m [0m      "activationUrl": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1",
+[31m│[0m [0m      "consumer": "projects/de-devops-lab1",
+[31m│[0m [0m      "containerInfo": "de-devops-lab1",
+[31m│[0m [0m      "service": "cloudresourcemanager.googleapis.com",
+[31m│[0m [0m      "serviceTitle": "Cloud Resource Manager API"
+[31m│[0m [0m    },
+[31m│[0m [0m    "reason": "SERVICE_DISABLED"
+[31m│[0m [0m  },
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
+[31m│[0m [0m    "locale": "en-US",
+[31m│[0m [0m    "message": "Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
+[31m│[0m [0m  },
+[31m│[0m [0m  {
+[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.Help",
+[31m│[0m [0m    "links": [
+[31m│[0m [0m      {
+[31m│[0m [0m        "description": "Google developers console API activation",
+[31m│[0m [0m        "url": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1"
+[31m│[0m [0m      }
+[31m│[0m [0m    ]
+[31m│[0m [0m  }
+[31m│[0m [0m]
+[31m│[0m [0m, accessNotConfigured[0m
+[31m│[0m [0m
+[31m│[0m [0m[0m  with google_project_service.bigquery,
+[31m│[0m [0m  on main.tf line 12, in resource "google_project_service" "bigquery":
+[31m│[0m [0m  12: resource "google_project_service" "bigquery" [4m{[0m[0m
+[31m│[0m [0m
+[31m╵[0m[0m

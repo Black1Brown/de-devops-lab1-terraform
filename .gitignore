@@ -1,0 +1,20 @@
+# Terraform local cache
+.terraform/
+
+# Terraform state files (remote state lives in GCS)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Local overrides (if any)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Editor junk
+*.swp
+.DS_Store

@@ -1,0 +1,171 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+
+Terraform will perform the following actions:
+
+[1m  # google_bigquery_dataset.lab[0m will be created
+[0m  [32m+[0m[0m resource "google_bigquery_dataset" "lab" {
+      [32m+[0m[0m creation_time              = (known after apply)
+      [32m+[0m[0m dataset_id                 = "lab_dataset"
+      [32m+[0m[0m default_collation          = (known after apply)
+      [32m+[0m[0m delete_contents_on_destroy = true
+      [32m+[0m[0m effective_labels           = {
+          [32m+[0m[0m "goog-terraform-provisioned" = "true"
+        }
+      [32m+[0m[0m etag                       = (known after apply)
+      [32m+[0m[0m id                         = (known after apply)
+      [32m+[0m[0m is_case_insensitive        = (known after apply)
+      [32m+[0m[0m last_modified_time         = (known after apply)
+      [32m+[0m[0m location                   = "EU"
+      [32m+[0m[0m max_time_travel_hours      = (known after apply)
+      [32m+[0m[0m project                    = "de-devops-lab1"
+      [32m+[0m[0m self_link                  = (known after apply)
+      [32m+[0m[0m storage_billing_model      = (known after apply)
+      [32m+[0m[0m terraform_labels           = {
+          [32m+[0m[0m "goog-terraform-provisioned" = "true"
+        }
+    }
+
+[1m  # google_compute_instance.lab_vm[0m will be created
+[0m  [32m+[0m[0m resource "google_compute_instance" "lab_vm" {
+      [32m+[0m[0m can_ip_forward       = false
+      [32m+[0m[0m cpu_platform         = (known after apply)
+      [32m+[0m[0m creation_timestamp   = (known after apply)
+      [32m+[0m[0m current_status       = (known after apply)
+      [32m+[0m[0m deletion_protection  = false
+      [32m+[0m[0m effective_labels     = {
+          [32m+[0m[0m "goog-terraform-provisioned" = "true"
+        }
+      [32m+[0m[0m id                   = (known after apply)
+      [32m+[0m[0m instance_id          = (known after apply)
+      [32m+[0m[0m label_fingerprint    = (known after apply)
+      [32m+[0m[0m machine_type         = "e2-micro"
+      [32m+[0m[0m metadata             = {
+          [32m+[0m[0m "ssh-keys" = "student:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIaeBEFS1/k+TRR/BDAhPBUCiOXcuzeNZr0iH3DB1sZG cloudshell"
+        }
+      [32m+[0m[0m metadata_fingerprint = (known after apply)
+      [32m+[0m[0m min_cpu_platform     = (known after apply)
+      [32m+[0m[0m name                 = "lab-vm"
+      [32m+[0m[0m project              = "de-devops-lab1"
+      [32m+[0m[0m self_link            = (known after apply)
+      [32m+[0m[0m tags                 = [
+          [32m+[0m[0m "ssh",
+        ]
+      [32m+[0m[0m tags_fingerprint     = (known after apply)
+      [32m+[0m[0m terraform_labels     = {
+          [32m+[0m[0m "goog-terraform-provisioned" = "true"
+        }
+      [32m+[0m[0m zone                 = "europe-central2-a"
+
+      [32m+[0m[0m boot_disk {
+          [32m+[0m[0m auto_delete                = true
+          [32m+[0m[0m device_name                = (known after apply)
+          [32m+[0m[0m disk_encryption_key_sha256 = (known after apply)
+          [32m+[0m[0m guest_os_features          = (known after apply)
+          [32m+[0m[0m kms_key_self_link          = (known after apply)
+          [32m+[0m[0m mode                       = "READ_WRITE"
+          [32m+[0m[0m source                     = (known after apply)
+
+          [32m+[0m[0m initialize_params {
+              [32m+[0m[0m architecture           = (known after apply)
+              [32m+[0m[0m image                  = "debian-cloud/debian-12"
+              [32m+[0m[0m labels                 = (known after apply)
+              [32m+[0m[0m provisioned_iops       = (known after apply)
+              [32m+[0m[0m provisioned_throughput = (known after apply)
+              [32m+[0m[0m resource_policies      = (known after apply)
+              [32m+[0m[0m size                   = 10
+              [32m+[0m[0m snapshot               = (known after apply)
+              [32m+[0m[0m type                   = "pd-balanced"
+            }
+        }
+
+      [32m+[0m[0m network_interface {
+          [32m+[0m[0m internal_ipv6_prefix_length = (known after apply)
+          [32m+[0m[0m ipv6_access_type            = (known after apply)
+          [32m+[0m[0m ipv6_address                = (known after apply)
+          [32m+[0m[0m name                        = (known after apply)
+          [32m+[0m[0m network                     = "default"
+          [32m+[0m[0m network_attachment          = (known after apply)
+          [32m+[0m[0m network_ip                  = (known after apply)
+          [32m+[0m[0m stack_type                  = (known after apply)
+          [32m+[0m[0m subnetwork                  = (known after apply)
+          [32m+[0m[0m subnetwork_project          = (known after apply)
+
+          [32m+[0m[0m access_config {
+              [32m+[0m[0m nat_ip       = (known after apply)
+              [32m+[0m[0m network_tier = (known after apply)
+            }
+        }
+    }
+
+[1m  # google_project_service.bigquery[0m will be created
+[0m  [32m+[0m[0m resource "google_project_service" "bigquery" {
+      [32m+[0m[0m id      = (known after apply)
+      [32m+[0m[0m project = "de-devops-lab1"
+      [32m+[0m[0m service = "bigquery.googleapis.com"
+    }
+
+[1m  # google_project_service.compute[0m will be created
+[0m  [32m+[0m[0m resource "google_project_service" "compute" {
+      [32m+[0m[0m id      = (known after apply)
+      [32m+[0m[0m project = "de-devops-lab1"
+      [32m+[0m[0m service = "compute.googleapis.com"
+    }
+
+[1m  # google_project_service.storage[0m will be created
+[0m  [32m+[0m[0m resource "google_project_service" "storage" {
+      [32m+[0m[0m id      = (known after apply)
+      [32m+[0m[0m project = "de-devops-lab1"
+      [32m+[0m[0m service = "storage.googleapis.com"
+    }
+
+[1m  # google_storage_bucket.lab[0m will be created
+[0m  [32m+[0m[0m resource "google_storage_bucket" "lab" {
+      [32m+[0m[0m effective_labels            = {
+          [32m+[0m[0m "goog-terraform-provisioned" = "true"
+        }
+      [32m+[0m[0m force_destroy               = true
+      [32m+[0m[0m id                          = (known after apply)
+      [32m+[0m[0m location                    = "EUROPE-CENTRAL2"
+      [32m+[0m[0m name                        = (known after apply)
+      [32m+[0m[0m project                     = (known after apply)
+      [32m+[0m[0m project_number              = (known after apply)
+      [32m+[0m[0m public_access_prevention    = (known after apply)
+      [32m+[0m[0m rpo                         = (known after apply)
+      [32m+[0m[0m self_link                   = (known after apply)
+      [32m+[0m[0m storage_class               = "STANDARD"
+      [32m+[0m[0m terraform_labels            = {
+          [32m+[0m[0m "goog-terraform-provisioned" = "true"
+        }
+      [32m+[0m[0m time_created                = (known after apply)
+      [32m+[0m[0m uniform_bucket_level_access = true
+      [32m+[0m[0m updated                     = (known after apply)
+      [32m+[0m[0m url                         = (known after apply)
+    }
+
+[1m  # random_id.bucket_suffix[0m will be created
+[0m  [32m+[0m[0m resource "random_id" "bucket_suffix" {
+      [32m+[0m[0m b64_std     = (known after apply)
+      [32m+[0m[0m b64_url     = (known after apply)
+      [32m+[0m[0m byte_length = 2
+      [32m+[0m[0m dec         = (known after apply)
+      [32m+[0m[0m hex         = (known after apply)
+      [32m+[0m[0m id          = (known after apply)
+    }
+
+[1mPlan:[0m 7 to add, 0 to change, 0 to destroy.
+[0m
+Changes to Outputs:
+  [32m+[0m[0m bigquery_dataset = "lab_dataset"
+  [32m+[0m[0m lab_bucket_name  = (known after apply)
+  [32m+[0m[0m vm_external_ip   = (known after apply)
+  [32m+[0m[0m vm_self_link     = (known after apply)
+[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Saved the plan to: tf.plan
+
+To perform exactly these actions, run the following command to apply:
+    terraform apply "tf.plan"
