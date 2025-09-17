@@ -1,118 +1,245 @@
 [0m[1mrandom_id.bucket_suffix: Refreshing state... [id=GEQ][0m
-[0m[1mgoogle_project_service.storage: Refreshing state... [id=de-devops-lab1/storage.googleapis.com][0m
 [0m[1mgoogle_project_service.compute: Refreshing state... [id=de-devops-lab1/compute.googleapis.com][0m
 [0m[1mgoogle_project_service.bigquery: Refreshing state... [id=de-devops-lab1/bigquery.googleapis.com][0m
-[31m╷[0m[0m
-[31m│[0m [0m[1m[31mError: [0m[0m[1mError when reading or editing Project Service de-devops-lab1/compute.googleapis.com: googleapi: Error 403: Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
-[31m│[0m [0mDetails:
-[31m│[0m [0m[
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-[31m│[0m [0m    "domain": "googleapis.com",
-[31m│[0m [0m    "metadata": {
-[31m│[0m [0m      "activationUrl": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1",
-[31m│[0m [0m      "consumer": "projects/de-devops-lab1",
-[31m│[0m [0m      "containerInfo": "de-devops-lab1",
-[31m│[0m [0m      "service": "cloudresourcemanager.googleapis.com",
-[31m│[0m [0m      "serviceTitle": "Cloud Resource Manager API"
-[31m│[0m [0m    },
-[31m│[0m [0m    "reason": "SERVICE_DISABLED"
-[31m│[0m [0m  },
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
-[31m│[0m [0m    "locale": "en-US",
-[31m│[0m [0m    "message": "Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
-[31m│[0m [0m  },
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.Help",
-[31m│[0m [0m    "links": [
-[31m│[0m [0m      {
-[31m│[0m [0m        "description": "Google developers console API activation",
-[31m│[0m [0m        "url": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1"
-[31m│[0m [0m      }
-[31m│[0m [0m    ]
-[31m│[0m [0m  }
-[31m│[0m [0m]
-[31m│[0m [0m, accessNotConfigured[0m
-[31m│[0m [0m
-[31m│[0m [0m[0m  with google_project_service.compute,
-[31m│[0m [0m  on main.tf line 2, in resource "google_project_service" "compute":
-[31m│[0m [0m   2: resource "google_project_service" "compute" [4m{[0m[0m
-[31m│[0m [0m
-[31m╵[0m[0m
-[31m╷[0m[0m
-[31m│[0m [0m[1m[31mError: [0m[0m[1mError when reading or editing Project Service de-devops-lab1/storage.googleapis.com: googleapi: Error 403: Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
-[31m│[0m [0mDetails:
-[31m│[0m [0m[
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-[31m│[0m [0m    "domain": "googleapis.com",
-[31m│[0m [0m    "metadata": {
-[31m│[0m [0m      "activationUrl": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1",
-[31m│[0m [0m      "consumer": "projects/de-devops-lab1",
-[31m│[0m [0m      "containerInfo": "de-devops-lab1",
-[31m│[0m [0m      "service": "cloudresourcemanager.googleapis.com",
-[31m│[0m [0m      "serviceTitle": "Cloud Resource Manager API"
-[31m│[0m [0m    },
-[31m│[0m [0m    "reason": "SERVICE_DISABLED"
-[31m│[0m [0m  },
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
-[31m│[0m [0m    "locale": "en-US",
-[31m│[0m [0m    "message": "Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
-[31m│[0m [0m  },
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.Help",
-[31m│[0m [0m    "links": [
-[31m│[0m [0m      {
-[31m│[0m [0m        "description": "Google developers console API activation",
-[31m│[0m [0m        "url": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1"
-[31m│[0m [0m      }
-[31m│[0m [0m    ]
-[31m│[0m [0m  }
-[31m│[0m [0m]
-[31m│[0m [0m, accessNotConfigured[0m
-[31m│[0m [0m
-[31m│[0m [0m[0m  with google_project_service.storage,
-[31m│[0m [0m  on main.tf line 7, in resource "google_project_service" "storage":
-[31m│[0m [0m   7: resource "google_project_service" "storage" [4m{[0m[0m
-[31m│[0m [0m
-[31m╵[0m[0m
-[31m╷[0m[0m
-[31m│[0m [0m[1m[31mError: [0m[0m[1mError when reading or editing Project Service de-devops-lab1/bigquery.googleapis.com: googleapi: Error 403: Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry.
-[31m│[0m [0mDetails:
-[31m│[0m [0m[
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.ErrorInfo",
-[31m│[0m [0m    "domain": "googleapis.com",
-[31m│[0m [0m    "metadata": {
-[31m│[0m [0m      "activationUrl": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1",
-[31m│[0m [0m      "consumer": "projects/de-devops-lab1",
-[31m│[0m [0m      "containerInfo": "de-devops-lab1",
-[31m│[0m [0m      "service": "cloudresourcemanager.googleapis.com",
-[31m│[0m [0m      "serviceTitle": "Cloud Resource Manager API"
-[31m│[0m [0m    },
-[31m│[0m [0m    "reason": "SERVICE_DISABLED"
-[31m│[0m [0m  },
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.LocalizedMessage",
-[31m│[0m [0m    "locale": "en-US",
-[31m│[0m [0m    "message": "Cloud Resource Manager API has not been used in project de-devops-lab1 before or it is disabled. Enable it by visiting https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1 then retry. If you enabled this API recently, wait a few minutes for the action to propagate to our systems and retry."
-[31m│[0m [0m  },
-[31m│[0m [0m  {
-[31m│[0m [0m    "@type": "type.googleapis.com/google.rpc.Help",
-[31m│[0m [0m    "links": [
-[31m│[0m [0m      {
-[31m│[0m [0m        "description": "Google developers console API activation",
-[31m│[0m [0m        "url": "https://console.developers.google.com/apis/api/cloudresourcemanager.googleapis.com/overview?project=de-devops-lab1"
-[31m│[0m [0m      }
-[31m│[0m [0m    ]
-[31m│[0m [0m  }
-[31m│[0m [0m]
-[31m│[0m [0m, accessNotConfigured[0m
-[31m│[0m [0m
-[31m│[0m [0m[0m  with google_project_service.bigquery,
-[31m│[0m [0m  on main.tf line 12, in resource "google_project_service" "bigquery":
-[31m│[0m [0m  12: resource "google_project_service" "bigquery" [4m{[0m[0m
-[31m│[0m [0m
-[31m╵[0m[0m
+[0m[1mgoogle_project_service.storage: Refreshing state... [id=de-devops-lab1/storage.googleapis.com][0m
+[0m[1mgoogle_storage_bucket.lab: Refreshing state... [id=lab-bucket-de-devops-lab1-1844][0m
+[0m[1mgoogle_compute_instance.lab_vm: Refreshing state... [id=projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm][0m
+[0m[1mgoogle_bigquery_dataset.lab: Refreshing state... [id=projects/de-devops-lab1/datasets/lab_dataset][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # google_bigquery_dataset.lab[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_bigquery_dataset" "lab" {
+      [31m-[0m[0m creation_time                   = 1758122115241 [90m-> null[0m[0m
+      [31m-[0m[0m dataset_id                      = "lab_dataset" [90m-> null[0m[0m
+      [31m-[0m[0m default_partition_expiration_ms = 0 [90m-> null[0m[0m
+      [31m-[0m[0m default_table_expiration_ms     = 0 [90m-> null[0m[0m
+      [31m-[0m[0m delete_contents_on_destroy      = true [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels                = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m etag                            = "cCM5yloSUOIX58WDKL4vWA==" [90m-> null[0m[0m
+      [31m-[0m[0m id                              = "projects/de-devops-lab1/datasets/lab_dataset" [90m-> null[0m[0m
+      [31m-[0m[0m is_case_insensitive             = false [90m-> null[0m[0m
+      [31m-[0m[0m labels                          = {} [90m-> null[0m[0m
+      [31m-[0m[0m last_modified_time              = 1758122115241 [90m-> null[0m[0m
+      [31m-[0m[0m location                        = "EU" [90m-> null[0m[0m
+      [31m-[0m[0m max_time_travel_hours           = "168" [90m-> null[0m[0m
+      [31m-[0m[0m project                         = "de-devops-lab1" [90m-> null[0m[0m
+      [31m-[0m[0m resource_tags                   = {} [90m-> null[0m[0m
+      [31m-[0m[0m self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/de-devops-lab1/datasets/lab_dataset" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels                = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "OWNER" [90m-> null[0m[0m
+          [31m-[0m[0m user_by_email = "burlakdima@gmail.com" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "OWNER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group = "projectOwners" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "READER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group = "projectReaders" [90m-> null[0m[0m
+        }
+      [31m-[0m[0m access {
+          [31m-[0m[0m role          = "WRITER" [90m-> null[0m[0m
+          [31m-[0m[0m special_group = "projectWriters" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # google_compute_instance.lab_vm[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_compute_instance" "lab_vm" {
+      [31m-[0m[0m can_ip_forward       = false [90m-> null[0m[0m
+      [31m-[0m[0m cpu_platform         = "Intel Broadwell" [90m-> null[0m[0m
+      [31m-[0m[0m creation_timestamp   = "2025-09-17T08:15:20.161-07:00" [90m-> null[0m[0m
+      [31m-[0m[0m current_status       = "RUNNING" [90m-> null[0m[0m
+      [31m-[0m[0m deletion_protection  = false [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels     = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m enable_display       = false [90m-> null[0m[0m
+      [31m-[0m[0m id                   = "projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm" [90m-> null[0m[0m
+      [31m-[0m[0m instance_id          = "6839628064937700971" [90m-> null[0m[0m
+      [31m-[0m[0m label_fingerprint    = "vezUS-42LLM=" [90m-> null[0m[0m
+      [31m-[0m[0m labels               = {} [90m-> null[0m[0m
+      [31m-[0m[0m machine_type         = "e2-micro" [90m-> null[0m[0m
+      [31m-[0m[0m metadata             = {
+          [31m-[0m[0m "ssh-keys" = "student:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIaeBEFS1/k+TRR/BDAhPBUCiOXcuzeNZr0iH3DB1sZG cloudshell"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m metadata_fingerprint = "KTSKtync4v8=" [90m-> null[0m[0m
+      [31m-[0m[0m name                 = "lab-vm" [90m-> null[0m[0m
+      [31m-[0m[0m project              = "de-devops-lab1" [90m-> null[0m[0m
+      [31m-[0m[0m resource_policies    = [] [90m-> null[0m[0m
+      [31m-[0m[0m self_link            = "https://www.googleapis.com/compute/v1/projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm" [90m-> null[0m[0m
+      [31m-[0m[0m tags                 = [
+          [31m-[0m[0m "ssh",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags_fingerprint     = "pfSjJj1RiUg=" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels     = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m zone                 = "europe-central2-a" [90m-> null[0m[0m
+
+      [31m-[0m[0m boot_disk {
+          [31m-[0m[0m auto_delete       = true [90m-> null[0m[0m
+          [31m-[0m[0m device_name       = "persistent-disk-0" [90m-> null[0m[0m
+          [31m-[0m[0m force_attach      = false [90m-> null[0m[0m
+          [31m-[0m[0m guest_os_features = [
+              [31m-[0m[0m "UEFI_COMPATIBLE",
+              [31m-[0m[0m "VIRTIO_SCSI_MULTIQUEUE",
+              [31m-[0m[0m "GVNIC",
+              [31m-[0m[0m "SEV_CAPABLE",
+              [31m-[0m[0m "SEV_LIVE_MIGRATABLE_V2",
+            ] [90m-> null[0m[0m
+          [31m-[0m[0m mode              = "READ_WRITE" [90m-> null[0m[0m
+          [31m-[0m[0m source            = "https://www.googleapis.com/compute/v1/projects/de-devops-lab1/zones/europe-central2-a/disks/lab-vm" [90m-> null[0m[0m
+
+          [31m-[0m[0m initialize_params {
+              [31m-[0m[0m architecture                = "X86_64" [90m-> null[0m[0m
+              [31m-[0m[0m enable_confidential_compute = false [90m-> null[0m[0m
+              [31m-[0m[0m image                       = "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-12-bookworm-v20250910" [90m-> null[0m[0m
+              [31m-[0m[0m labels                      = {} [90m-> null[0m[0m
+              [31m-[0m[0m provisioned_iops            = 0 [90m-> null[0m[0m
+              [31m-[0m[0m provisioned_throughput      = 0 [90m-> null[0m[0m
+              [31m-[0m[0m resource_manager_tags       = {} [90m-> null[0m[0m
+              [31m-[0m[0m resource_policies           = [] [90m-> null[0m[0m
+              [31m-[0m[0m size                        = 10 [90m-> null[0m[0m
+              [31m-[0m[0m type                        = "pd-balanced" [90m-> null[0m[0m
+            }
+        }
+
+      [31m-[0m[0m network_interface {
+          [31m-[0m[0m internal_ipv6_prefix_length = 0 [90m-> null[0m[0m
+          [31m-[0m[0m name                        = "nic0" [90m-> null[0m[0m
+          [31m-[0m[0m network                     = "https://www.googleapis.com/compute/v1/projects/de-devops-lab1/global/networks/default" [90m-> null[0m[0m
+          [31m-[0m[0m network_ip                  = "10.186.0.2" [90m-> null[0m[0m
+          [31m-[0m[0m queue_count                 = 0 [90m-> null[0m[0m
+          [31m-[0m[0m stack_type                  = "IPV4_ONLY" [90m-> null[0m[0m
+          [31m-[0m[0m subnetwork                  = "https://www.googleapis.com/compute/v1/projects/de-devops-lab1/regions/europe-central2/subnetworks/default" [90m-> null[0m[0m
+          [31m-[0m[0m subnetwork_project          = "de-devops-lab1" [90m-> null[0m[0m
+
+          [31m-[0m[0m access_config {
+              [31m-[0m[0m nat_ip       = "34.118.23.198" [90m-> null[0m[0m
+              [31m-[0m[0m network_tier = "PREMIUM" [90m-> null[0m[0m
+            }
+        }
+
+      [31m-[0m[0m scheduling {
+          [31m-[0m[0m automatic_restart   = true [90m-> null[0m[0m
+          [31m-[0m[0m availability_domain = 0 [90m-> null[0m[0m
+          [31m-[0m[0m min_node_cpus       = 0 [90m-> null[0m[0m
+          [31m-[0m[0m on_host_maintenance = "MIGRATE" [90m-> null[0m[0m
+          [31m-[0m[0m preemptible         = false [90m-> null[0m[0m
+          [31m-[0m[0m provisioning_model  = "STANDARD" [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m shielded_instance_config {
+          [31m-[0m[0m enable_integrity_monitoring = true [90m-> null[0m[0m
+          [31m-[0m[0m enable_secure_boot          = false [90m-> null[0m[0m
+          [31m-[0m[0m enable_vtpm                 = true [90m-> null[0m[0m
+        }
+    }
+
+[1m  # google_project_service.bigquery[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_project_service" "bigquery" {
+      [31m-[0m[0m id      = "de-devops-lab1/bigquery.googleapis.com" [90m-> null[0m[0m
+      [31m-[0m[0m project = "de-devops-lab1" [90m-> null[0m[0m
+      [31m-[0m[0m service = "bigquery.googleapis.com" [90m-> null[0m[0m
+    }
+
+[1m  # google_project_service.compute[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_project_service" "compute" {
+      [31m-[0m[0m id      = "de-devops-lab1/compute.googleapis.com" [90m-> null[0m[0m
+      [31m-[0m[0m project = "de-devops-lab1" [90m-> null[0m[0m
+      [31m-[0m[0m service = "compute.googleapis.com" [90m-> null[0m[0m
+    }
+
+[1m  # google_project_service.storage[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_project_service" "storage" {
+      [31m-[0m[0m id      = "de-devops-lab1/storage.googleapis.com" [90m-> null[0m[0m
+      [31m-[0m[0m project = "de-devops-lab1" [90m-> null[0m[0m
+      [31m-[0m[0m service = "storage.googleapis.com" [90m-> null[0m[0m
+    }
+
+[1m  # google_storage_bucket.lab[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "google_storage_bucket" "lab" {
+      [31m-[0m[0m default_event_based_hold    = false [90m-> null[0m[0m
+      [31m-[0m[0m effective_labels            = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m enable_object_retention     = false [90m-> null[0m[0m
+      [31m-[0m[0m force_destroy               = true [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "lab-bucket-de-devops-lab1-1844" [90m-> null[0m[0m
+      [31m-[0m[0m labels                      = {} [90m-> null[0m[0m
+      [31m-[0m[0m location                    = "EUROPE-CENTRAL2" [90m-> null[0m[0m
+      [31m-[0m[0m name                        = "lab-bucket-de-devops-lab1-1844" [90m-> null[0m[0m
+      [31m-[0m[0m project                     = "de-devops-lab1" [90m-> null[0m[0m
+      [31m-[0m[0m project_number              = 505636858103 [90m-> null[0m[0m
+      [31m-[0m[0m public_access_prevention    = "inherited" [90m-> null[0m[0m
+      [31m-[0m[0m requester_pays              = false [90m-> null[0m[0m
+      [31m-[0m[0m self_link                   = "https://www.googleapis.com/storage/v1/b/lab-bucket-de-devops-lab1-1844" [90m-> null[0m[0m
+      [31m-[0m[0m storage_class               = "STANDARD" [90m-> null[0m[0m
+      [31m-[0m[0m terraform_labels            = {
+          [31m-[0m[0m "goog-terraform-provisioned" = "true"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m time_created                = "2025-09-17T15:15:15.153Z" [90m-> null[0m[0m
+      [31m-[0m[0m uniform_bucket_level_access = true [90m-> null[0m[0m
+      [31m-[0m[0m updated                     = "2025-09-17T15:15:15.153Z" [90m-> null[0m[0m
+      [31m-[0m[0m url                         = "gs://lab-bucket-de-devops-lab1-1844" [90m-> null[0m[0m
+
+      [31m-[0m[0m hierarchical_namespace {
+          [31m-[0m[0m enabled = false [90m-> null[0m[0m
+        }
+
+      [31m-[0m[0m soft_delete_policy {
+          [31m-[0m[0m effective_time             = "2025-09-17T15:15:15.153Z" [90m-> null[0m[0m
+          [31m-[0m[0m retention_duration_seconds = 604800 [90m-> null[0m[0m
+        }
+    }
+
+[1m  # random_id.bucket_suffix[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "random_id" "bucket_suffix" {
+      [31m-[0m[0m b64_std     = "GEQ=" [90m-> null[0m[0m
+      [31m-[0m[0m b64_url     = "GEQ" [90m-> null[0m[0m
+      [31m-[0m[0m byte_length = 2 [90m-> null[0m[0m
+      [31m-[0m[0m dec         = "6212" [90m-> null[0m[0m
+      [31m-[0m[0m hex         = "1844" [90m-> null[0m[0m
+      [31m-[0m[0m id          = "GEQ" [90m-> null[0m[0m
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 7 to destroy.
+[0m
+Changes to Outputs:
+  [31m-[0m[0m bigquery_dataset = "lab_dataset" [90m-> null[0m[0m
+  [31m-[0m[0m lab_bucket_name  = "lab-bucket-de-devops-lab1-1844" [90m-> null[0m[0m
+  [31m-[0m[0m vm_external_ip   = "34.118.23.198" [90m-> null[0m[0m
+  [31m-[0m[0m vm_self_link     = "https://www.googleapis.com/compute/v1/projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm" [90m-> null[0m[0m
+[0m[1mgoogle_bigquery_dataset.lab: Destroying... [id=projects/de-devops-lab1/datasets/lab_dataset][0m[0m
+[0m[1mgoogle_compute_instance.lab_vm: Destroying... [id=projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm][0m[0m
+[0m[1mgoogle_storage_bucket.lab: Destroying... [id=lab-bucket-de-devops-lab1-1844][0m[0m
+[0m[1mgoogle_storage_bucket.lab: Destruction complete after 1s[0m
+[0m[1mgoogle_project_service.storage: Destroying... [id=de-devops-lab1/storage.googleapis.com][0m[0m
+[0m[1mrandom_id.bucket_suffix: Destroying... [id=GEQ][0m[0m
+[0m[1mgoogle_project_service.storage: Destruction complete after 0s[0m
+[0m[1mrandom_id.bucket_suffix: Destruction complete after 0s[0m
+[0m[1mgoogle_bigquery_dataset.lab: Destruction complete after 2s[0m
+[0m[1mgoogle_project_service.bigquery: Destroying... [id=de-devops-lab1/bigquery.googleapis.com][0m[0m
+[0m[1mgoogle_project_service.bigquery: Destruction complete after 0s[0m
+[0m[1mgoogle_compute_instance.lab_vm: Still destroying... [id=projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm, 10s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.lab_vm: Still destroying... [id=projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm, 20s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.lab_vm: Still destroying... [id=projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm, 30s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.lab_vm: Still destroying... [id=projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm, 40s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.lab_vm: Still destroying... [id=projects/de-devops-lab1/zones/europe-central2-a/instances/lab-vm, 50s elapsed][0m[0m
+[0m[1mgoogle_compute_instance.lab_vm: Destruction complete after 51s[0m
+[0m[1mgoogle_project_service.compute: Destroying... [id=de-devops-lab1/compute.googleapis.com][0m[0m
+[0m[1mgoogle_project_service.compute: Destruction complete after 0s[0m
+[0m[1m[32m
+Destroy complete! Resources: 7 destroyed.
+[0m
